@@ -1,0 +1,58 @@
+/*color*/
+
+.red{
+  background-color: red;
+}
+.yellow{
+  background-color: yellow;
+}
+
+.bk{
+  background-color: black;
+}
+
+.fntw{
+  color:white;
+}
+
+
+/*font*/
+.karla{
+  font-family: 'Karla', sans-serif;
+}
+
+.rozha{
+  font-family: 'Rozha One', serif;
+}
+
+/*sizing*/
+.nav{
+  height:5vh;
+}
+.mnbody{
+  height: 95vh;
+}
+
+/*positions*/
+.imgp{
+  padding-top:30vh;
+  text-align: center;
+  vertical-align: middle;
+  /*float: left; 
+  position: relative;  
+  display: flex;
+  align-items: center;
+  justify-content: center;*/
+}
+
+.helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.ysp{
+    padding-top:10vh;
+}
+
+
