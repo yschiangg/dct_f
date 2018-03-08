@@ -60,6 +60,13 @@ body.open:after {
   animation-fill-mode: both;
   animation-name: slideOutLeft;
 }
+
+.b-brand:hover:not(.open) {
+  text-decoration: none;
+  visibility: hidden;
+  color:red;
+}
+
 .b-nav li:first-child {
   padding-top: 120px;
 }
@@ -87,6 +94,8 @@ body.open:after {
 .b-link:hover, .b-link--active {
   border-left: white solid 2px;
   padding-left: 30px;
+  color: white;
+  text-decoration: none;
 }
 
 .b-menu {
@@ -131,6 +140,7 @@ body.open:after {
 
 .b-brand {
   color: black;
+  visibility: hidden;
   font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -171,4 +181,7 @@ body.open:after {
 }
 .b-container.open .b-brand {
   color: white;
+  text-decoration: none;
+  visibility: visible;
+
 }
