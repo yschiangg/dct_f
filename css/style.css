@@ -122,6 +122,8 @@
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 .arrowed {
   position: relative;
   left:2em;
@@ -144,15 +146,20 @@
 	border-width: 2px 0 0 0;
 }
 >>>>>>> 5522a2a68afef4c6fcf5ce6f179c4ef430f21510
+>>>>>>> 7b1ed845f4d6d863463befb14c7fc585120ec80e
 
 
 /*pre&next*/
 .slides-nav {
   z-index: 99;
   position: fixed;
-  right: -5%;
+  right: -10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   color: white;
 }
@@ -163,47 +170,56 @@
 }
 .slides-nav__nav {
   position: relative;
-  right: 0;
+  right: 5vh;
   display: block;
   font-size: 1em;
-  transform: rotate(90deg);
-  transform-origin: center;
-  color:white;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 .slides-nav button {
   position: relative;
   display: inline-block;
   padding: 0.35em;
   margin: 0;
-  font-family: "Space Mono", monospace;
+  /*font-family: "Space Mono", monospace;*/
+  color:white;
   background: transparent;
   border: 0;
   overflow-x: hidden;
+  -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
-  color:white;
 }
 .slides-nav button:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
   height: 1px;
   width: 0;
   background: white;
+  -webkit-transition: width 0.4s ease;
   transition: width 0.4s ease;
 }
 .slides-nav button:hover {
   cursor: pointer;
   color: white;
+  -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
 .slides-nav button:hover:after {
   width: 100%;
+  -webkit-transition: width 0.4s ease;
   transition: width 0.4s ease;
 }
 .slides-nav button:focus {
   outline: 0;
 }
+.is-sliding .slides-nav {
+  pointer-events: none;
+}
+
 
 
 /*arrow2*/
