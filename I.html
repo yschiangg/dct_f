@@ -37,8 +37,8 @@
 
 		<div class="all">
 			<div class="fullscreen-bg ">
-				<video autoplay muted loop class = "fullscreen-bg__video"><source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/magic.mp4?alt=media&token=09a00a5e-d8c6-4120-a0ed-dcd106e2f525" type="video/mp4">Your browser does not support HTML5 video.</video>
-				</div>
+				<video autoplay muted loop class = "fullscreen-bg__video"><source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/starry.mp4?alt=media&token=44bc2ba9-520a-46b1-8d96-100436dc930d" type="video/mp4">Your browser does not support HTML5 video.</video>
+			</div>
 			<div class = "row  nav ">
 				header
 			</div>
@@ -51,12 +51,25 @@
 					<p class = "fntw karla" style = "padding-top:200px;" >You feel like this universe is too big for you<br>And don’t know where to go</p>
 					</div>
 				</div>
-				<div class="col-xs-12 col-s-12 col-md-3 ">link to next page</div>
-			</div>
+				<div class="col-xs-12 col-s-12 col-md-3">link to next page
+					<div class="row justify-content-center align-items-center">
+						<div class = "col align-self-center">
+							<section class="slides-nav">
+								<nav class="slides-nav__nav">
+									<button class="slides-nav__prev js-prev">Prev</button>
+									<button class="slides-nav__next js-next" onclick="window.location.href='II.html'">  Next</button>
+								</nav>
+							</section>
+						</div>
+					</div>				
+				</div>			</div>
+			<div id="ShootingStarParams"></div>
 		</div>
 
-		<script src="burgerjs.js"></script>
-		<script src="typed.js"></script>
+		<script src="js/burgerjs.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/shootingstar.js"></script>
+
 		<script>
   var typed = new Typed('.element', {
     stringsElement: '#typed-strings'

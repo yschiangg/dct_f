@@ -120,6 +120,8 @@
   }
 }
 
+<<<<<<< HEAD
+=======
 .arrowed {
   position: relative;
   left:2em;
@@ -141,6 +143,7 @@
 	border: 1px solid white;
 	border-width: 2px 0 0 0;
 }
+>>>>>>> 5522a2a68afef4c6fcf5ce6f179c4ef430f21510
 
 
 /*pre&next*/
@@ -228,3 +231,7 @@ a.button svg g polyline{
   fill: none;
   stroke: #fff;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 5522a2a68afef4c6fcf5ce6f179c4ef430f21510
