@@ -47,6 +47,11 @@
   line-height: 80%;
 }
 
+.hmstroke{
+  -webkit-text-stroke:3px white;
+  -webkit-text-fill-color:transparent;
+}
+
 /*sizing*/
 .nav{
   height:8vh;
@@ -243,7 +248,62 @@ a.button svg g polyline{
   fill: none;
   stroke: #fff;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 5522a2a68afef4c6fcf5ce6f179c4ef430f21510
+/*?glow*/
+.glow{
+  text-shadow: 0 0 10px #fff; 
+  font-size: 30vh;
+  }
+
+.tooltip{
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color:transparent;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:  transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+a:hover{
+  text-decoration: none;
+  text-shadow: 0 0 10px beige;
+  color:white; 
+  
+}
+
+a:active{
+  text-decoration: none;
+  text-shadow: 0 0 15px white;
+  color:white; 
+}
+a:visited{
+  text-decoration: none;
+  text-shadow: 0 0 10px white;
+  color:white;   d
+}

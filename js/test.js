@@ -34,6 +34,8 @@ $(function(){
 	});
 });
 
+<<<<<<< HEAD
+=======
 (function($) {
  
 	var SliceSlider = {
@@ -90,6 +92,7 @@ $(function(){
 	  },
 
 
+>>>>>>> c90dc1a96ae50a02b5d0258edac06cd8086aeb12
   
 
   
