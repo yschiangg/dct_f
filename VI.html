@@ -2,7 +2,6 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <html>
 	<head>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/starcss.css">
 		<link rel="stylesheet" type="text/css" href="css/burgercss.css">
@@ -11,9 +10,10 @@
 		<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	</head>
 
-	<body class="bk">
+	<body>
 		<div>
 				<!-- Navigation -->
 					<div class="b-nav">
@@ -37,7 +37,7 @@
 
 		<div class="all">
 			<div class="fullscreen-bg ">
-				<img source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/clarisse-meyer-297888-unsplash%20%E6%8B%B7%E8%B2%9D%202.jpg?alt=media&token=14415a5d-9394-4d57-88e3-104b11752f53" style ="width : 100%;"> 
+				<video autoplay muted loop class = "fullscreen-bg__video"><source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/train.mp4?alt=media&token=dc4ad391-4e0f-4d26-889d-42f55711bd48" type="video/mp4">Your browser does not support HTML5 video.</video>
 			</div>
 			<div class = "row  nav ">
 				header
@@ -46,19 +46,8 @@
 			<div class = "row mnbody">
 				<div class="col-xs-12 col-s-12 col-md-3 "></div>
 				<div class="col-xs-12 col-s-12 col-md-6 ">
-					<div class="row justify-content-start">
-						<div class= "mdd break-word">
-							<p class = "fntw karla" style = "padding-top:200px;" id="typedtext" ></p>
-						</div>
-						<div class="col align-self-center " >
-
-								<div  style="text-align:center;" >
-									<div >
-										<span class = "verla huge glow" >?</span>
-										<h4>What do you want to do with your life?</h4>
-									</div>
-								</div>
-						</div>
+					<div class= "mdd ">
+					<p class = "fntw karla" style = "padding-top:200px;" id="typedtext" ></p>
 					</div>
 				</div>
 
@@ -67,33 +56,27 @@
 						<div class = "col fntw align-self-center ">
 							<section class="slides-nav">
 								<nav class="slides-nav__nav">
-								  <button class="slides-nav__prev " onclick="window.location.href='I.html'">Prev</button>
-								  <button class="slides-nav__next " onclick="window.location.href='III.html'">Next</button>
+								  <button class="slides-nav__prev js-prev" onclick="window.location.href='V.html'">Prev</button>
+								  <button class="slides-nav__next js-next" onclick="window.location.href='VII.html'">Next</button>
 								</nav>
 							  </section>						
 						</div>
 					</div>				
 				</div>		
+			<div id="ShootingStarParams"></div>
 		</div>
 
 		<script src="js/burgerjs.js"></script>
-		<script src="js/trailcursor.js"></script>
 		<script src="js/typed.js"></script>
 		<script src="js/typed.min.js"></script>
+		<script>
+			var typed = new Typed("#typedtext", {
+				strings: ['Better get going than staying here.<br> . . .<br>So you travel.'],
+				typeSpeed: 40,
+				backSpeed: 0,
+				loop: false,
+			});
 
-		<script>
-			//var typed = new Typed("#typedtext", {
-			// 	strings: ['“Who am I ? And what am I doing here?”<br>“Where am I supposed to go”'],
-			// 	typeSpeed: 0,
-			// 	backSpeed: 0,
-			// 	fadeOut: true,
-			// 	loop: true
-			// });
-		</script>
-		<script>
-			$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
 		</script>
 	</body>
 
