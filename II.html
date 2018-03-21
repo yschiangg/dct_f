@@ -7,9 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="css/starcss.css">
 		<link rel="stylesheet" type="text/css" href="css/burgercss.css">
 		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 
@@ -18,7 +15,6 @@
 				<!-- Navigation -->
 					<div class="b-nav">
 					  <li><a class="b-link" href="home.html" target="_self">Home</a></li>
-					  <li><a class="b-link" href="https://github.com/mblode" target="_blank">Home</a></li>
 					  <li><a class="b-link" href="about.html" target="_self">About</a></li>
 					  <li><a class="b-link" href="credits.html" target="_self">Credits</a></li>
 					</div>
@@ -31,7 +27,7 @@
 					    <div class="b-bun b-bun--bottom"></div>
 					  </div>
 					  <!-- Burger-Brand -->
-					  <a href="#" class="b-brand">Burger</a>
+					  <a href="#" class="b-brand"></a>
 					</div>
 				</div>
 
@@ -54,8 +50,8 @@
 
 								<div  style="text-align:center;" >
 									<div >
-										<span class = "verla huge glow" >?</span>
-										<h4>What do you want to do with your life?</h4>
+										<span class = "verla huge glow" id="question">?</span>
+										<h4 class="karla" style="font-size:12pt;position:absolute;margin-left: 11.5vw;" id="questext"></h4>
 									</div>
 								</div>
 						</div>
@@ -92,7 +88,13 @@
 		</script>
 		<script>
 			$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
+	//$('[data-toggle="tooltip"]').tooltip();
+	$('#question').hover(function(){
+		
+		$("#questext").append('<div id="text" style="text-align:center;">"“Who am I ? And what am I doing here?”<br>“Where am I supposed to go”<br><br>Most time I am quite confused.</div>')
+	},function(){
+		$("#text").remove();
+	});
 });
 		</script>
 	</body>
