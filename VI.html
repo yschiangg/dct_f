@@ -3,12 +3,8 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/starcss.css">
 		<link rel="stylesheet" type="text/css" href="css/burgercss.css">
 		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	</head>
@@ -18,7 +14,6 @@
 				<!-- Navigation -->
 					<div class="b-nav">
 					  <li><a class="b-link" href="home.html" target="_self">Home</a></li>
-					  <li><a class="b-link" href="https://github.com/mblode" target="_blank">Home</a></li>
 					  <li><a class="b-link" href="about.html" target="_self">About</a></li>
 					  <li><a class="b-link" href="credits.html" target="_self">Credits</a></li>
 					</div>
@@ -47,7 +42,9 @@
 				<div class="col-xs-12 col-s-12 col-md-3 "></div>
 				<div class="col-xs-12 col-s-12 col-md-6 ">
 					<div class= "mdd ">
-					<p class = "fntw karla" style = "padding-top:200px;" id="typedtext" ></p>
+					<div class = "fntw karla" style = "padding-top:200px;" >
+						 <span id="typedtext"></span>
+					</div>
 					</div>
 				</div>
 
@@ -63,18 +60,18 @@
 						</div>
 					</div>				
 				</div>		
-			<div id="ShootingStarParams"></div>
 		</div>
 
 		<script src="js/burgerjs.js"></script>
 		<script src="js/typed.js"></script>
 		<script src="js/typed.min.js"></script>
+
 		<script>
 			var typed = new Typed("#typedtext", {
-				strings: ['Better get going than staying here.<br> . . .<br>So you travel.'],
-				typeSpeed: 40,
-				backSpeed: 0,
-				loop: false,
+				strings: ['The universe is big. So big. <br> Sometimes, I feel lost.'],
+				typeSpeed: 80,
+				backSpeed: 20,
+				loop: true
 			});
 
 		</script>

@@ -3,22 +3,17 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/starcss.css">
 		<link rel="stylesheet" type="text/css" href="css/burgercss.css">
 		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	</head>
 
-	<body class="bk">
+	<body>
 		<div>
 				<!-- Navigation -->
 					<div class="b-nav">
 					  <li><a class="b-link" href="home.html" target="_self">Home</a></li>
-					  <li><a class="b-link" href="https://github.com/mblode" target="_blank">Home</a></li>
 					  <li><a class="b-link" href="about.html" target="_self">About</a></li>
 					  <li><a class="b-link" href="credits.html" target="_self">Credits</a></li>
 					</div>
@@ -37,8 +32,8 @@
 
 		<div class="all">
 			<div class="fullscreen-bg ">
-				<video autoplay loop class = "fullscreen-bg__video"><source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/new%20s.mp4?alt=media&token=659359a2-587a-4c07-b9f1-b52f541e4ae6" type="video/mp4">Your browser does not support HTML5 video.</video>
-				</div>
+				<video autoplay muted loop class = "fullscreen-bg__video"><source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/new%20s.mp4?alt=media&token=659359a2-587a-4c07-b9f1-b52f541e4ae6" type="video/mp4">Your browser does not support HTML5 video.</video>
+			</div>
 			<div class = "row  nav ">
 				header
 			</div>
@@ -46,35 +41,39 @@
 			<div class = "row mnbody">
 				<div class="col-xs-12 col-s-12 col-md-3 "></div>
 				<div class="col-xs-12 col-s-12 col-md-6 ">
-					<div class= "mdd break-word">
-					<p class = "fntw karla" style = "padding-top:200px;" id="typedtext"></p>
+					<div class= "mdd ">
+					<div class = "fntw karla" style = "padding-top:200px;" >
+						 <span id="typedtext"></span>
+					</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-s-12 col-md-3 ">link to next page
+
+				<div class="col-xs-12 col-s-12 col-md-3">link to next page
 					<div class="row justify-content-center">
 						<div class = "col fntw align-self-center ">
 							<section class="slides-nav">
 								<nav class="slides-nav__nav">
-								 <button class="slides-nav__prev js-prev" onclick="window.location.href='V.html'">Prev</button>
-								 <button class="slides-nav__next js-next" onclick="window.location.href='VII.html'">Next</button>
+								  <button class="slides-nav__prev js-prev" onclick="window.location.href='VI.html'">Prev</button>
+								  <button class="slides-nav__next js-next" onclick="window.location.href='VIII.html'">Next</button>
 								</nav>
-							 </section>						
+							  </section>						
 						</div>
-					</div>	
-				</div>
-			</div>
+					</div>				
+				</div>		
 		</div>
 
 		<script src="js/burgerjs.js"></script>
 		<script src="js/typed.js"></script>
 		<script src="js/typed.min.js"></script>
+
 		<script>
-			var typed5 = new Typed("#typedtext", {
+			var typed = new Typed("#typedtext", {
 				strings: ['So you travel, you go to places<br>You meet people, new and old, fun and dry.<br>You make friends even.'],
-				typeSpeed: 50,
+				typeSpeed: 80,
 				backSpeed: 20,
-				loop: false,
+				loop: true
 			});
+
 		</script>
 	</body>
 
