@@ -415,7 +415,6 @@ span{
   }
 
   a:hover{
-    text-decoration: none;
     color:white;
   }
 
@@ -423,3 +422,32 @@ span{
     text-decoration: none;
     color:white;
   }
+
+  /*floodright*/
+  #flood-right {
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -ms-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+    -webkit-box-shadow: inset 0px 0 0 0 #ffffff;
+    -moz-box-shadow: inset 0px 0 0 0 #ffffff;
+    -ms-box-shadow: inset 0px 0 0 0 #ffffff;
+    -o-box-shadow: inset 0px 0 0 0 #ffffff;
+    box-shadow: inset 0px 0 0 0 #ffffff;
+    color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+  }
+  #flood-right:hover {
+    color: black;
+    -webkit-box-shadow: inset 500px 0 0 0 #ffffff;
+    -moz-box-shadow: inset 500px 0 0 0 #ffffff;
+    -ms-box-shadow: inset 500px 0 0 0 #ffffff;
+    -o-box-shadow: inset 500px 0 0 0 #ffffff;
+    box-shadow: inset 500px 0 0 0 #ffffff;
+  }
+  
+  .pointer{
+  cursor: pointer; 
+  }
+
