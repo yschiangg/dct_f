@@ -35,23 +35,20 @@
 					</div>
 				</div>
 
-		<div class="all">
+		<div class="all" onclick="playVid()">
 			<div class="fullscreen-bg ">
-					<video autoplay muted loop class = "fullscreen-bg__video"><source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/fire.mp4?alt=media&token=339dbe6b-b4e5-4554-8767-f0f93a647b61" type="video/mp4">Your browser does not support HTML5 video.</video>
+					<video muted id="bgVideo" class = "fullscreen-bg__video" ><source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/life%20is%20wierd.mp4?alt=media&token=3a9f6fcc-a80a-41e4-beaa-2085de044892" type="video/mp4">Your browser does not support HTML5 video.</video>
 			</div>
 			<div class = "row  nav ">
-				header
+			header
 			</div>
 
 			<div class = "row mnbody">
 				<div class="col-xs-12 col-s-12 col-md-3 "></div>
 				<div class="col-xs-12 col-s-12 col-md-6 ">
-					<div class="row justify-content-start" style="text-align:center;">
-						<div class= "mdd break-word">
-							<p class = "fntw karla" style = "padding-top:200px;" id="typedtext" ></p>
-						</div>
-						<div id="img" style="text-align:center;"></div>
-					</div>
+					<!-- <div style="text-align:center; padding-top:50vh;">
+					<a href="#" onclick="playVid()" >...</a>
+					</div> -->
 				</div>
 
 				<div class="col-xs-12 col-s-12 col-md-3">link to next page
@@ -71,7 +68,6 @@
 		<script src="js/burgerjs.js"></script>
 		<script src="js/typed.js"></script>
 		<script src="js/typed.min.js"></script>
-		<script src="js/glitch.js"></script>
 
 		<script>
 			//var typed = new Typed("#typedtext", {
@@ -83,9 +79,10 @@
 			 //});
 		</script>
 		<script>
-			$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
+			var vid = document.getElementById("bgVideo"); 
+			function playVid() { 
+				vid.play(); 
+			} 
 		</script>
 	</body>
 
