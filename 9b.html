@@ -30,12 +30,11 @@
 					</div>
 				</div>
 
-		<div class="all">
+		<div class="all" onclick="toggleMute();">
 			<div class="fullscreen-bg ">
-				<video autoplay muted loop class = "fullscreen-bg__video"><source src="" type="video/mp4">Your browser does not support HTML5 video.</video>
+				<video autoplay muted loop id="vid" class = "fullscreen-bg__video"><source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/fire.mp4?alt=media&token=339dbe6b-b4e5-4554-8767-f0f93a647b61" type="video/mp4">Your browser does not support HTML5 video.</video>
 			</div>
 			<div class = "row  nav ">
-				header
 			</div>
 
 			<div class = "row mnbody pointer">
@@ -62,15 +61,16 @@
 		</div>
 
 		<script src="js/burgerjs.js"></script>
+		<script src="js/mute.js"></script>
 		<script src="js/typed.js"></script>
 		<script src="js/typed.min.js"></script>
 
 		<script>
 			var typed = new Typed("#typedtext", {
-				strings: ['Though everything is uncertain, I do believe it would be okay. <br>Cause with the help from those I trust,<br>everything should be alright.'],
+				strings: ['Everything is changing. <br>With the help from those I trust,<br>everything should be alright.'],
 				typeSpeed: 80,
 				backSpeed: 20,
-				loop: false,
+				loop: true,
 			});
 
 		</script>
