@@ -1,23 +1,30 @@
+var g = null;
+var h = null;
+
+document.addEventListener('mouseup', onMouseUpdate, false);
+document.addEventListener('mousedown', onMouseUpdate, false);
+
+function onMouseUpdate(e) {
+    g = e.pageX;
+    h = e.pageY;
+}
+
+function getMouseX() {
+    return g;
+}
+
+function getMouseY() {
+    return h;
+}
+
+
 (function() {
-  /**
-     author: @manufosela
-     2013/08/27    copyleft 2013
-
-     ShootingStar class Main Methods:
-     launch: launch shooting stars every N seconds received by              param. 10 seconds by default.
-      launchStar: launch a shooting star. Received options                  object by param with:
-               - dir (direction between 0 and 1)
-               - life (between 100 and 400)
-               - beamSize (between 400 and 700)
-               - velocity (between 2 and 10)
-  **/
-
   ShootingStar = function(id) {
     this.n = 0;
     this.m = 0;
     this.defaultOptions = {
-      velocity: 10,
-      starSize: 20,
+      velocity: 8,
+      starSize: 10,
       life: 300,
       beamSize: 400,
       dir: -1
@@ -96,9 +103,10 @@
     this.m = 0;
     var i = 0,
       l = this.options.beamSize,
-      x = this.getRandom(this.wW - this.options.beamSize - 100, 100),
-      y = this.getRandom(this.hW - this.options.beamSize - 100, 100),
-      self = this;
+      //x = this.getRandom(this.wW - this.options.beamSize - 100, 100),
+      //y = this.getRandom(this.hW - this.options.beamSize - 100, 100),
+     x=g, y=h,
+        self = this;
     for (; i < l; i++) {
       setTimeout(function() {
         self.addBeamPart(x, y);
@@ -109,13 +117,13 @@
         self.delTrozoHaz()
       }, self.options.beamSize + (i * self.options.velocity));
     }
-    $("#ShootingStarParams").html("Launching shooting star. PARAMS: wW: " + this.wW + " - hW: " + this.hW + " - life: " + this.options.life + " - beamSize: " + this.options.beamSize + " - velocity: " + this.options.velocity);
+    $("#ShootingStarParams").html("Launching shooting star. PARAMS: wW: " + this.wW + " - hW: " + this.hW + " - life: " + this.options.life + " - beamSize: " + this.options.beamSize + " - velocity: " + this.options.velocity+ "g"+g);
     $("#ShootingStarParams").fadeIn("slow");
   }
 
   ShootingStar.prototype.launch = function(everyTime) {
     if (this.toType(everyTime) != "number") {
-      everyTime = 10;
+      everyTime = 3;
     }
     everyTime = everyTime * 1000;
     this.launchStar();
@@ -125,7 +133,7 @@
         dir: (self.getRandom(1, 0)) ? 1 : -1,
         life: self.getRandom(400, 100),
         beamSize: self.getRandom(700, 400),
-        velocity: self.getRandom(12, 6)
+        velocity: self.getRandom(10, 4)
       }
       self.launchStar(options);
     }, everyTime);
