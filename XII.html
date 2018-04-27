@@ -30,9 +30,9 @@
 					</div>
 				</div>
 
-		<div class="all">
+		<div class="all" onclick="togglePlay();">
 			<div class="fullscreen-bg ">
-				<video autoplay muted loop class = "fullscreen-bg__video"><source src="" type="video/mp4">Your browser does not support HTML5 video.</video>
+				<video id="vid" style="height:100%;" class = "fullscreen-bg__video"><source src="https://firebasestorage.googleapis.com/v0/b/lonelycosmos-dct.appspot.com/o/Vids%2F12.life%20goes%20on%2Fcut.mp4?alt=media&token=f0ca9cc8-9073-4651-8cda-8489530be1d6" type="video/mp4">Your browser does not support HTML5 video.</video>
 			</div>
 			<div class = "row  nav ">
 				header
@@ -64,6 +64,7 @@
 		<script src="js/burgerjs.js"></script>
 		<script src="js/typed.js"></script>
 		<script src="js/typed.min.js"></script>
+		<script src="js/play.js"></script>
 
 		<script>
 			var typed = new Typed("#typedtext", {
@@ -73,6 +74,11 @@
 				loop: true
 			});
 
+		</script>
+		<script>
+		function playVideo(){
+    document.getElementById('vid').play();
+		};
 		</script>
 	</body>
 
