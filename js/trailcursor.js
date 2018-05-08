@@ -78,8 +78,8 @@ function animate(){
 		} 
 		else{
 
-			temp1.top = y+o + 'px';
-			temp1.left = x + 'px';
+			temp1.top = y+o +1+'px';
+			temp1.left = x +1+ 'px';
 		}
 	}
 
