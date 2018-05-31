@@ -4,26 +4,19 @@
 
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/burgercss.css">
-	<link rel="stylesheet" type="text/css" href="css/shootingstar.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body calss="crosshair">
+<body>
 	<div>
 		<!-- Navigation -->
 		<div class="b-nav">
-			<li>
-				<a class="b-link" href="home.html" target="_self">Home</a>
-			</li>
-			<li>
-				<a class="b-link" href="about.html" target="_self">About</a>
-			</li>
-			<li>
-				<a class="b-link" href="credits.html" target="_self">Credits</a>
-			</li>
+			<li><a class="b-link" href="0.html" target="_self">首頁</a></li>
+			<li><a class="b-link" href="about cn.html" target="_self">關於</a></li>
+			<li><a class="b-link" href="credits cn.html" target="_self">致謝</a></li>
 		</div>
 
 		<!-- Burger-Icon -->
@@ -38,10 +31,10 @@
 		</div>
 	</div>
 
-	<div class="all">
-		<div class="fullscreen-bg ">
-			<video autoplay muted loop class="fullscreen-bg__video">
-				<source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/starry.mp4?alt=media&token=44bc2ba9-520a-46b1-8d96-100436dc930d"
+	<div class="all ">
+		<div class="fullscreen-bg">
+			<video autoplay muted loop id="bgVideo" class="fullscreen-bg__video">
+				<source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/too%20big.mp4?alt=media&token=5b87b26e-e5c6-467c-adce-67da0ba9eda4"
 				 type="video/mp4">Your browser does not support HTML5 video.</video>
 		</div>
 		<div class="row  nav ">
@@ -49,11 +42,10 @@
 
 		<div class="row mnbody pointer">
 			<div class="col-xs-12 col-s-12 col-md-3 "></div>
-			<div class="col-xs-12 col-s-12 col-md-6 ">
-				<div class="mdd ">
-					<div class="fntw karla" style="padding-top:200px;">
-						<span id="typedtext"></span>
-					</div>
+			<div class="col-xs-12 col-s-12 col-md-6 " onmouseover="pauseVid()" onmouseout="playVid()">
+				<div class="mdd fntw karla">
+					<p class="fntw karla" style="padding-top:200px;"></p>
+					<span id="typedtext"></span>
 				</div>
 			</div>
 
@@ -62,29 +54,35 @@
 					<div class="col fntw align-self-center ">
 						<section class="slides-nav">
 							<nav class="slides-nav__nav">
-								<button class="slides-nav__prev js-prev" onclick="window.location.href='home.html'">Prev</button>
-								<button class="slides-nav__next js-next" onclick="window.location.href='II.html'">Next</button>
+								<button class="slides-nav__prev js-prev" onclick="window.location.href='7-1.html'">Prev</button>
+								<button class="slides-nav__next js-next" onclick="window.location.href='9.html'">Next</button>
 							</nav>
 						</section>
 					</div>
 				</div>
 			</div>
-			
 		</div>
 
 		<script src="js/burgerjs.js"></script>
 		<script src="js/typed.js"></script>
 		<script src="js/typed.min.js"></script>
-		<script src="js/shootingstar.js"></script>
 
 		<script>
 			var typed = new Typed("#typedtext", {
-				strings: ['The universe is big. So big. <br> Sometimes, I feel lost.'],
+				strings: ['但總會有些時候，<br>還是覺得這世界大的令人惶恐。'],
 				typeSpeed: 80,
-				backSpeed: 20,
-				loop: true,
+				backSpeed: 0,
+				loop: false,
 			});
-
+		</script>
+		<script>
+			var vid = document.getElementById("bgVideo");
+			function pauseVid() {
+				vid.pause();
+			}
+			function playVid() {
+				vid.play();
+			} 
 		</script>
 </body>
 

@@ -2,21 +2,21 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <html>
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/burgercss.css">
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 
 	<body>
 		<div>
 				<!-- Navigation -->
-					<div class="b-nav">
-					  <li><a class="b-link" href="home.html" target="_self">Home</a></li>
-					  <li><a class="b-link" href="about.html" target="_self">About</a></li>
-					  <li><a class="b-link" href="credits.html" target="_self">Credits</a></li>
-					</div>
+				<div class="b-nav">
+					<li><a class="b-link" href="0.html" target="_self">首頁</a></li>
+					<li><a class="b-link" href="about cn.html" target="_self">關於</a></li>
+					<li><a class="b-link" href="credits cn.html" target="_self">致謝</a></li>
+				</div>
 
 				<!-- Burger-Icon -->
 					<div class="b-container">
@@ -30,19 +30,20 @@
 					</div>
 				</div>
 
-		<div class="all" onclick="togglePlay();">
+		<div class="all pointer" onclick="togglePlay() ">
 			<div class="fullscreen-bg ">
-				<video id="vid" style="width:100%;" class = "fullscreen-bg__video"><source src="https://firebasestorage.googleapis.com/v0/b/lonelycosmos-dct.appspot.com/o/Vids%2Ff.mp4?alt=media&token=90a5bc1c-2c78-4634-907e-c88f2a31b88f" type="video/mp4">Your browser does not support HTML5 video.</video>
+				<video id="vid" class = "fullscreen-bg__video"><source src="https://firebasestorage.googleapis.com/v0/b/lonelycosmos-dct.appspot.com/o/Vids%2F4.mp4?alt=media&token=60e5b4e9-0519-4d34-ba8b-04a07ea92cdd" type="video/mp4">Your browser does not support HTML5 video.</video>
 			</div>
 			<div class = "row  nav ">
 			</div>
 
-			<div class = "row mnbody pointer">
+			<div class = "row mnbody">
 				<div class="col-xs-12 col-s-12 col-md-3 "></div>
 				<div class="col-xs-12 col-s-12 col-md-6 ">
-					<div class= "mdd fntw karla">
-					<p class = "fntw karla" style = "padding-top:200px;" ></p>
-					<span id="typedtext"></span>
+					<div class= "mdd ">
+					<div class = "fntw karla" style = "padding-top:200px;" >
+						 <span id="typedtext"></span>
+					</div>
 					</div>
 				</div>
 
@@ -51,8 +52,8 @@
 						<div class = "col fntw align-self-center ">
 							<section class="slides-nav">
 								<nav class="slides-nav__nav">
-								  <button class="slides-nav__prev js-prev" onclick="window.location.href='XI.html'">Prev</button>
-								  <button class="slides-nav__next js-next" onclick="window.location.href='epi.html'">Next</button>
+								  <button class="slides-nav__prev js-prev" onclick="window.location.href='6.html'">Prev</button>
+								  <button class="slides-nav__next js-next" onclick="window.location.href='7-1.html'">Next</button>
 								</nav>
 							  </section>						
 						</div>
@@ -65,19 +66,15 @@
 		<script src="js/typed.min.js"></script>
 		<script src="js/play.js"></script>
 
+
 		<script>
 			var typed = new Typed("#typedtext", {
-				strings: ['And life will go on just as it is.'],
+				strings: ['然後啊，旅途中遇到了許多人<br>有些是過客，有些成了摯友。'],
 				typeSpeed: 80,
 				backSpeed: 20,
 				loop: true
 			});
 
-		</script>
-		<script>
-		function playVideo(){
-    document.getElementById('vid').play();
-		};
 		</script>
 	</body>
 

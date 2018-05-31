@@ -7,17 +7,17 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	 crossorigin="anonymous">
-	 <link rel="stylesheet" type="text/css" href="css/burgercss.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/burgercss.css">
 </head>
 
 <body>
 	<div>
 		<!-- Navigation -->
 		<div class="b-nav">
-			<li><a class="b-link" href="0.html" target="_self">Home</a></li>
-			<li><a class="b-link" href="about cn.html" target="_self">About</a></li>
-			<li><a class="b-link" href="credits cn.html" target="_self">Credits</a></li>
+			<li><a class="b-link" href="0.html" target="_self">首頁</a></li>
+			<li><a class="b-link" href="about cn.html" target="_self">關於</a></li>
+			<li><a class="b-link" href="credits cn.html" target="_self">致謝</a></li>
 		</div>
 
 		<!-- Burger-Icon -->
@@ -31,18 +31,17 @@
 			<a href="#" class="b-brand"></a>
 		</div>
 	</div>
-
-	<div class="all" onclick="toggleMute();">
+	<div class="all">
 		<div class="fullscreen-bg ">
-			<video autoplay muted loop id="vid" class="fullscreen-bg__video">
-				<source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/fire.mp4?alt=media&token=339dbe6b-b4e5-4554-8767-f0f93a647b61"
-				 type="video/mp4">Your browser does not support HTML5 video.</video>
+			<video autoplay loop source src="">Your browser does not support HTML5 video.</video>
 		</div>
-		<div class="row  nav "></div>
+		<div class="row  nav ">
+		</div>
 
-		<div class="row mnbody pointer">
-			<div class="col-xs-12 col-s-12 col-md-3 "></div>
-			<div class="col-xs-12 col-s-12 col-md-6 ">
+		<div class="row mnbody drag">
+			<div class="col-xs-12 col-s-12 col-md-9 ">
+				<canvas id="c"></canvas>
+
 				<div class="mdd fntw karla">
 					<p class="fntw karla" style="padding-top:200px;"></p>
 					<span id="typedtext"></span>
@@ -54,26 +53,29 @@
 					<div class="col fntw align-self-center ">
 						<section class="slides-nav">
 							<nav class="slides-nav__nav">
-								<button class="slides-nav__prev js-prev" onclick="window.location.href='IX.html'">Prev</button>
-								<button class="slides-nav__next js-next" onclick="window.location.href='X.html'">Next</button>
+								<button class="slides-nav__prev js-prev" onclick="window.location.href='10.html'">Prev</button>
+								<button class="slides-nav__next js-next" onclick="window.location.href='12.html'">Next</button>
 							</nav>
 						</section>
 					</div>
 				</div>
 			</div>
+			
 		</div>
+		<span id="typedtext" class="fntw"></span>
 
 		<script src="js/burgerjs.js"></script>
-		<script src="js/mute.js"></script>
 		<script src="js/typed.js"></script>
 		<script src="js/typed.min.js"></script>
+		<script src="js/fluidsimulation.js"></script>
+
 
 		<script>
 			var typed = new Typed("#typedtext", {
-				strings: ['Everything is changing. <br>With the help from those I trust,<br>everything should be alright.'],
+				strings: [' 但只要在一切紛擾中，找到屬於自己的步調，好好的和自己共處。<br> 我想，一切便會沒事了吧（長遠看來）。'],
 				typeSpeed: 80,
 				backSpeed: 20,
-				loop: true,
+				loop: true
 			});
 
 		</script>
